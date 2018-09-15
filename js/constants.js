@@ -1,0 +1,1 @@
+var GET_CATS_URL = 'http://localhost:7886/cats.json';
