@@ -1,13 +1,16 @@
 [
 	{
+		"id": "1",
 		"name": "Keks",
 		"image": "4-ways-cheer-up-depressed-cat.jpg"
 	},
 	{
+		"id": "2",
 		"name": "Murzik",
 		"image": "kitty-cat-kitten-pet-45201.jpeg"
 	},
 	{
+		"id": "3",
 		"name": "Barsik",
 		"image": "pexels-photo.jpg"
 	}

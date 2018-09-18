@@ -3,13 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<section>
 		<h2>Cats</h2>
+		<button id="add-cat" type="button">Добавить котика</button>
 		<div class="cat-list"></div>
 	</section>
-	
+
+	<section class="modal">
+		<button id="close-form-btn" type="button">Закрыть</button>
+		<h2>Создать котика</h2>
+		<form id="cat-form" action="">
+			<input type="text" name="name">
+			<input class="image-upload" type="file" name="image">
+			<button type="submit">Создать</button>
+		</form>
+	</section>
 	<template id="cat">
 		<p class="cat">
 			<span class="cat__name"></span>
@@ -20,6 +31,7 @@
 	<script src="js/utils/constants.js"></script>
 	<script src="js/utils/fetchData.js"></script>
 	<script src="js/components/Cat.js"></script>
+	<script src="js/components/CatList.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@ var fetchData = (function() {
 
 		xhr.onreadystatechange = function () {
 			if(xhr.readyState === 4 && xhr.status === 200) {
+				sessionStorage.setItem('cats', xhr.responseText);
 				callback(JSON.parse(xhr.responseText));
 			}
 		};

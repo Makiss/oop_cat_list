@@ -1,7 +1,8 @@
 var Cat = (function() {
 	'use strict';
 
-	var Cat = function(name, image) {
+	var Cat = function(id, name, image) {
+		this.id = id;
 		this.name = name;
 		this.image = image;
 	};
@@ -12,6 +13,8 @@ var Cat = (function() {
 			true
 		);
 
+		var catContainer = catTemplateCopy.querySelector('.cat');
+		catContainer.dataset.id = this.id;
 		var catName = catTemplateCopy.querySelector('.cat__name');
 		catName.textContent = this.name;
 		var catImage = catTemplateCopy.querySelector('.cat__image');
